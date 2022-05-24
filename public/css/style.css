@@ -72,7 +72,7 @@ header #ProfilePicture{
 }
 
 header #Logo{
-    height: 70px;
+    height: 45px;
 }
 
 header .notifications{
@@ -140,7 +140,11 @@ footer ul{
     height: 80px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+}
+
+footer ul li{
+    padding: 0 15px;
 }
 
 footer ul li a{
