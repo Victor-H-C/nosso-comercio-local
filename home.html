@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="public/css/style.css">
     <title>Início</title>
 </head>
@@ -15,13 +16,15 @@
     <header>
         <div class="container">
             <div class="profile">
-                <img src="public/images/header/profile.png" alt="" id="ProfilePicture">
-                <span>Lorem Ipsum</span>
+                <a href="pages/perfil.html">
+                    <img src="public/images/header/profile.png" alt="" id="ProfilePicture">
+                    <span>Lorem Ipsum</span>
+                </a>
             </div>
             <div class="header-notifications">
                 <img src="public/images/header/logo.png" alt="" id="Logo">
                 <div class="notifications">
-                    <div class="notification has-notification">1</div>
+                    <i class="fa-solid fa-bell fa-2x" style="color:#c5c5c5"></i>
                 </div>
             </div>
         </div>
@@ -29,22 +32,22 @@
 
     <section class="content container">
         
-        <h3>COFRINHO DA SEMANA</h3>
-        <div class="card card-light text-center mb-2">
-            <p><img src="public/images/icons/clock--v2.png" alt=""> Encerra em .. dias (../.. as ..h)</p>
-            <p>R$..,00</p>
-            <br>
-            <p><img src="public/images/icons/726570.png" alt=""> .. Lojas participando</p>
-            <p><img src="public/images/icons/33308.png" alt=""> .. Clientes participando</p>
-            <div class="card-bottom">
-                Total acumulado para doação: R$00,00
-                <br>
-                <span class= "block text-right">Entidade: Lorem Ipsum</span>
+        <h4>COFRINHO DA SEMANA</h4>
+        <div class="card card-light mb-2">
+            <div class="card-body text-center">
+                <p><i class="fa-regular fa-clock"></i> Encerra em .. dias (../.. as ..h)</p>
+                <p>R$..,00</p>
+                <p><i class="fa-solid fa-shop" style="color: #858585"></i> .. Lojas participando</p>
+                <p><i class="fa-solid fa-users" style="color: #858585"></i>.. Clientes participando</p>
+            </div>
+                <div class="card-footer">
+                    <p>Total acumulado para doação: R$00,00</p> 
+                    <span class= "block text-right">Entidade: Lorem Ipsum</span>
             </div>
         </div>
 
-        <div class="card card-gray text-center mb-2">
-            <p>Parabéns, seu comércio está participando do cofrinho!</p>
+        <div class="card card-gray text-center mb-2 h-80 justify-content-center">
+            <p class="m-0">Parabéns, seu comércio está participando do cofrinho!</p>
         </div>
 
         <div class="card card-gray text-center h-100 lh-100 mb-2">
@@ -52,11 +55,19 @@
         </div>
 
         <div class="cards text-center">
-            <div class="card card-gray-dark lh-80 h-80 w-50 color-white mb-2">
-                <a href="">HISTÓRICO VISITAS</a>
+            <div class="card card-gray-dark h-80 w-50 color-white mb-2 justify-content-center">
+                <i class="fa-solid fa-bars-staggered" style="color: #858585"></i>
+                <a href="">
+                    <span class="block">HISTÓRICO</span> 
+                    <span>VISITAS</span> 
+                </a>
             </div>
-            <div class="card card-gray-dark lh-80 h-80 w-50 color-white mb-2">
-                <a href="">GERENCIAR SEUS CUPONS</a>
+            <div class="card card-gray-dark h-80 w-50 color-white mb-2 justify-content-center">
+                <i class="fa-solid fa-ticket-simple" style="color: #858585"></i>
+                <a href="">
+                    <span class="block">GERENCIAR SEUS</span>
+                    <span>CUPONS</span> 
+                </a>
             </div>
             <div class="card card-light lh-40 w-50 mb-2">
                 <a href="">ver todos os comércios...</a>
@@ -100,6 +111,8 @@
             </ul>
         </nav>
     </footer>
+
+    <script src="https://kit.fontawesome.com/e2a49f871c.js" crossorigin="anonymous"></script>
 
 </body>
 </html>
