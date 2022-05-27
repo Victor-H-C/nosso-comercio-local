@@ -78,35 +78,13 @@ header #Logo{
     height: 45px;
 }
 
-/* header .notifications{
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-    line-height: 15px;
-    padding: 0 5px;
-    width: 30px;
-    height: 30px;
-    background-size: cover;
-    background-image: url('../images/header/notification.png');
-    cursor: pointer;
-} */
-
-/* header .notifications .notification{
-    display: none;
-    height: 15px;
-    width: 15px;    
-    border-radius: 10px;
-    text-align: center;
-    font-size: .7rem;
-    transform: translate(10px, -10px);
-    background-color: #6f6f6f;
-    color: white;
-    border: 1px solid #ffffff;
+.notifications{
+    color: #c5c5c5;
 }
 
-header .notifications .notification.has-notification{
-    display: inline-block;
-} */
+.notifications:hover i{
+    color: #000;
+}
 
 div.card{
     border-radius: 10px;
@@ -199,7 +177,7 @@ footer ul li a img{
 }
 
 .profile-links form, .profile-links a{
-    width: calc(100% - 50px);
+    width: calc(100% - 25px);
     border-bottom: 1px solid #979797;
 }
 
@@ -208,6 +186,7 @@ footer ul li a img{
 }
 
 .profile-links ul li{
+    height: 60px;
     padding: 10px 0;
 }
 
